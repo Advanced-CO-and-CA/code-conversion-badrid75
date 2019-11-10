@@ -19,7 +19,7 @@ OUTPUT: .word 0xdeadbeef
 
 
 _main:
-	// Clear the realize
+	// Clear the registers
 
 	mov r0,  #0x0
 	mov r1,  #0x0
@@ -46,7 +46,7 @@ _main:
 	// Algorithim:- 
 	// Take each nibble, multiply with its decimal place value
 	// decimal place value and add 
-	// ... nibble3*10^3 + nibble2*10^2 + nibble1*10^1 + nibble0*10^0
+	// ... nibble3*0x10^3 + nibble2*0x0^2 + nibble1*0x10^1 + nibble0*0x10^0
 	//---------------------------------------------------------------------------------
 nibble_loop:
 
